@@ -1,6 +1,6 @@
 <script>
   async function fetchGameUpdates() {
-    const response = await fetch('https://api.githib.com/repos/kuyaed-1720/my-pixi-game/commits');
+    const response = await fetch('https://api.github.com/repos/kuyaed-1720/my-pixi-game/commits');
     const commits = await response.json();
 
     const lisr = document.getElementById('commit-list');
