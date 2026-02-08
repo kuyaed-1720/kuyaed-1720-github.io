@@ -1,5 +1,30 @@
-#latest-work {
-  color: #0f380f;
+@font-face {
+  font-family: "BoldPixels";
+  src: url("assets/fonts/BoldPixels.ttf");
+}
+
+:root {
+  --light-green: #9bbc0f;
+  --mid-green: #306230;
+  --dark-green: #0f380f;
+  --dark: #031103;
+}
+
+body {
+  font-family: "BoldPixels";
+  font-size: 24px;
+}
+
+.latest-work {
+  color: var(--mid-green);
+}
+
+#game-title {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  text-align: center;
+  text-shadow: 4px 2px 0px var(--mid-green);
+  font-size: 64px;
 }
 
 .log-container {
@@ -14,16 +39,16 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 20px;
-  background: #9bbc0f;
-  border: 4px solid #306230;
+  background: var(--light-green);
+  border: 4px solid var(--mid-green);
   padding: 20px;
-  box-shadow: 8px 8px 0px #306230;
+  box-shadow: 8px 8px 0px var(--mid-green);
 }
 
 .log-clip img,
 .log-clip video {
   width: 100%;
-  border: 2px solid #0f380f;
+  border: 2px solid var(--dark-green);
 }
 
 @media (max-width: 600px) {
