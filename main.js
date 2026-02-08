@@ -15,12 +15,12 @@ async function fetchGameUpdates() {
         if (currentDate !== lastDate) {
             li.innerHTML = `
                 <div style="margin-top: 20px; font-weight: bold;">${currentDate}</div>
-                <div style="margin-bottom: 10px;">${"-".repeat(40)} ${message}</div>
+                <div style="margin-bottom: 10px;">${"-".repeat(10)} ${message}</div>
             `;
             lastDate = currentDate;
         } else {
             li.innerHTML = `
-                <div style="margin-bottom: 10px;">${"-".repeat(40)} ${message}</div>
+                <div style="margin-bottom: 10px;">${"-".repeat(10)} ${message}</div>
             `;
         }
 

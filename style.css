@@ -23,12 +23,20 @@ body {
   margin-top: 20px;
 }
 
-#game-title {
+header {
+  padding: 5px;
   background-color: var(--dark-green);
   color: var(--light-green);
   text-align: center;
-  text-shadow: 4px 2px 0px var(--mid-green);
-  font-size: 64px;
+}
+
+header h2 {
+  margin: 5px;
+}
+
+header p {
+  font-size: 16px;
+  margin: 5px;
 }
 
 .game-container iframe {
